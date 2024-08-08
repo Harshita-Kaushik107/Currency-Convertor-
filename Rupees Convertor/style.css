@@ -1,0 +1,145 @@
+/* Basic styling for the body with a background image */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+/* Styling for the converter container */
+.converter {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.converter:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading styling */
+h2 {
+    margin-bottom: 25px;
+    color: #ffc107; /* Gold color */
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Input group and input styling */
+.input-group {
+    margin-bottom: 25px;
+}
+
+input, select {
+    padding: 12px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ffc107;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 1em;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #ff5722; /* Orange color */
+    box-shadow: 0 0 10px rgba(255, 87, 34, 0.7);
+    outline: none;
+}
+
+/* Button styling */
+button {
+    padding: 12px 25px;
+    background-color: #ffc107; /* Gold color */
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #a5e0ad; /* Orange color */
+    transform: scale(1.1);
+}
+
+/* Result display styling */
+.result {
+    margin-top: 25px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #ffc107; /* Gold color */
+    transition: color 0.3s ease;
+}
+
+.result:hover {
+    color: #ff5722; /* Orange color */
+}
+/* General styling for select elements */
+select {
+    padding: 12px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ffc107;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 1em;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    appearance: none; /* Removes default dropdown arrow in some browsers */
+    background-image: url('dropdown-arrow.png'); /* Add custom arrow image */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+select:focus {
+    border-color: #ff5722; /* Orange color */
+    box-shadow: 0 0 10px rgba(255, 87, 34, 0.7);
+    outline: none;
+}
+
+/* Option elements styling */
+option {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    font-size: 1em;
+}
+
+/* Disabled option styling (if any) */
+option:disabled {
+    color: #999;
+}
+
+/* Hover effect for select dropdown */
+select:hover {
+    background-color: #f0f78d;
+}
+
+/* Option specific styling is limited, but you can control the text color */
+option:hover {
+    background-color: #ffc107; /* Highlighted color */
+    color: #fff;
+}
+
+/* Custom arrow for the select dropdown (optional) */
+select::-ms-expand {
+    display: none; /* Hides the default dropdown arrow in IE */
+}
